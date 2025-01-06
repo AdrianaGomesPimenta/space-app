@@ -1,7 +1,6 @@
 import {styled} from "styled-components";
 import CampoTexto from "../CampoTexto"
 
-
 const HeaderEstilizado = styled.header`
   padding: 60px 30px;
   display: flex;
@@ -62,29 +61,3 @@ const Cabecalho = () => {
 
 export default Cabecalho;
 
-
-
-
-// import {styled} from "styled-components";
-// import CampoTexto from "../CampoTexto"
-
-// const HeaderEstilizado = styled.header`
-// padding: 60px 30px;
-// display: flex;
-// justify-content: space-between;
-// img {
-//     max-width: 212px;
-    
-// }
-// @media (max-width: 550px) {
-//         flex-direction: column;}
-// `
-
-// const Cabecalho = ( ) => {
-//     return(<HeaderEstilizado>
-//         <img src="/imagens/logo.png" alt="Logo do space" />   
-//         <CampoTexto />       
-//     </HeaderEstilizado>)
-// }
-
-// export default Cabecalho;

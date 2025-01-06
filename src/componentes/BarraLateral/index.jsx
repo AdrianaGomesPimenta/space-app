@@ -14,9 +14,6 @@ list-style: none;
 padding: 20px;
 margin: 0;
 width: 236px;
-/* @media (max-width: 768px) {
-    width:212px;
-    padding:10px;} */
 `
 
 const BarraLateral = () => {

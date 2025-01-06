@@ -4,37 +4,26 @@ import Tags from "./Tags"
 import Populares from "./Populares"
 import Imagem from "./Imagem"
 
-
-
 const GaleriaContainer = styled.div`
     display: flex;
     gap: 24px;
     @media (max-width:1200px){
         flex-direction: column;
-}
-    
+}   
 `
 
 const SecaoFluida = styled.section`
     flex-grow: 1;
+    min-width: 0;
 `
 
 const ImagensContainer = styled.section`
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 24px;
-    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     width: 100%;
-    margin: 0 auto; /* Para centralizar */
+    margin: 0 auto; 
 `
-
-// const ImagensContainer = styled.section`
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     gap: 24px;
-// `
 
 const Galeria = ({ fotos = [], setTag, aoFotoSelecionada, aoAlternarFavorito, }) => {
     return (
